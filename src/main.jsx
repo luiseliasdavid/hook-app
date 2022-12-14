@@ -13,15 +13,17 @@ import { Memorize } from './06-memos/Memorize'
 import { Padre } from './07-tarea-memo/Padre'
 import { HooksApp } from './HooksApp'
 import './08-useReducer/intro-reducer'
-
-*/
-
-import './index.css'
-
 import { TodoApp } from './08-useReducer/TodoApp'
 
+*/
+import {BrowserRouter, createBrowserRouter, RouterProvider, } from "react-router-dom";
+import './index.css'
+import {MainApp} from '../src/09-useContext/index'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
- // <React.StrictMode>
-    <TodoApp />
- // </React.StrictMode>
+   <BrowserRouter>
+ {/*  <React.StrictMode> */}
+    <MainApp />
+{/*  </React.StrictMode> */}
+</BrowserRouter>
 )
