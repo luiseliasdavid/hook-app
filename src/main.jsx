@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-/* import { CounterApp } from './01-useState/CounterApp'
+import { CounterApp } from './01-useState/CounterApp'
 import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook'
 import { FormWithCustomHook } from './02-useEffect/FormWithCustomHook'
 import { SimpleForm } from './02-useEffect/SimpleForm'
@@ -14,8 +14,6 @@ import { Padre } from './07-tarea-memo/Padre'
 import { HooksApp } from './HooksApp'
 import './08-useReducer/intro-reducer'
 import { TodoApp } from './08-useReducer/TodoApp'
-
-*/
 import {BrowserRouter, createBrowserRouter, RouterProvider, } from "react-router-dom";
 import './index.css'
 import {MainApp} from '../src/09-useContext/index'
@@ -23,7 +21,7 @@ import {MainApp} from '../src/09-useContext/index'
 ReactDOM.createRoot(document.getElementById('root')).render(
    <BrowserRouter>
  {/*  <React.StrictMode> */}
-    <MainApp />
+    <TodoApp />
 {/*  </React.StrictMode> */}
 </BrowserRouter>
 )

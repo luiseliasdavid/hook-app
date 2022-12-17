@@ -5,17 +5,17 @@ export const useTodos = () => {
     const initialState = []
 
     const init = ()=> {
-      return JSON.parse(localStorage.getItem('todos') || []);
+      return JSON.parse(localStorage.getItem('todos'));
      }
 
      const [todos, dispatch] = useReducer(todoReducer, initialState, init)
 
-     const todosCount= todos.length
+     const todosCount= todos? todos.length : 0
 
-     const pendingTodos= todos.filter(todo=> todo.done===false).length
+     const pendingTodos= todos?.filter(todo=> todo.done===false).length
 
      useEffect(() => {
-        localStorage.setItem('todos', JSON.stringify(todos) || [])
+        localStorage.setItem('todos', JSON.stringify(todos))
       }, [todos])
       
      
